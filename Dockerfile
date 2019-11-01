@@ -6,4 +6,4 @@ WORKDIR /app/outline
 RUN tar -xzf /tmp/outline*.tar.gz
 RUN rm /tmp/outline*
 WORKDIR /app
-ENTRYPOINT ["/app/outline/outline-ss-server", "-config", $OUTLINE_CONFIG]
+ENTRYPOINT /app/outline/outline-ss-server -config $OUTLINE_CONFIG
