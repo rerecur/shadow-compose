@@ -1,0 +1,9 @@
+shadow_runner:
+  build: .
+  environment:
+    OUTLINE_CONFIG: /app/config/outline.yml
+  ports:
+    - "443:443/tcp"
+    - "443:443/udp"
+  volumes:
+    - ./config:/app/config
